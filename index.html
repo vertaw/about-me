@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>vertaw bio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<button class="music-toggle" id="musicToggle" type="button" aria-label="enable music">
+  <span class="music-icon">♪</span>
+  <span class="music-label">enable music</span>
+</button>
+
+<div class="room">
+
+  <section class="pc">
+    <div class="monitor">
+      <div class="monitor-screen">
+        <div class="screen-glass"></div>
+        <div class="screen-scanlines"></div>
+
+        <section class="windows-lock" id="windowsLock">
+          <div class="lock-clock">
+            <div class="lock-time" id="lockTime">21:53</div>
+            <div class="lock-date" id="lockDate">четверг, 11 июня</div>
+          </div>
+          <div class="lock-status-icons"><span>▣</span><span>▥</span></div>
+          <div class="unlock-hint">клик / колесо / Enter — разблокировать</div>
+        </section>
+
+        <section class="start-screen" id="startScreen">
+          <div class="start-wallpaper"></div>
+          <div class="start-dim"></div>
+
+          <header class="start-top">
+            <h1>Start</h1>
+            <div class="start-user">
+              <div class="start-name">
+                <strong>vertaw</strong>
+                <span>local account</span>
+              </div>
+              <div class="userpic">v</div>
+              <button>⏻</button>
+              <button>⌕</button>
+            </div>
+          </header>
+
+          <div class="metro-layout">
+
+            <div class="tile mail" style="--x:0;--y:0;--w:2;--h:2;">
+              <span class="tile-title">Mail</span>
+              <span class="tile-text">vertaw.win<br>i love old tech</span>
+              <b>8</b>
+            </div>
+
+            <div class="tile weather" style="--x:2;--y:0;--w:2;--h:2;">
+              <span class="weather-temp">1337°</span>
+              <span class="tile-title">горим!!</span>
+            </div>
+
+            <div class="tile news" style="--x:4;--y:0;--w:1;--h:1;">
+              <span class="tile-text">оно мертво!!<br>Internet Explorer</span>
+            </div>
+
+            <div class="tile reading" style="--x:5;--y:0;--w:1;--h:1;">
+              <span class="reading-lines"></span>
+              <span class="tile-title">хз</span>
+            </div>
+
+            <button class="tile ie-main" id="pcIeTile" style="--x:4;--y:1;--w:2;--h:2;">
+              <img src="assets/ie-logo-white.png" alt="">
+              <span class="tile-title">Internet Explorer</span>
+              <span class="tile-text">vertaw.win</span>
+            </button>
+
+            <div class="tile calendar" style="--x:0;--y:2;--w:2;--h:1;">
+              <span class="tile-text">vertaw news<br>13:37 – 13:37</span>
+              <span class="calendar-date">11</span>
+              <span class="calendar-day">Thursday</span>
+            </div>
+
+            <div class="tile note" style="--x:2;--y:2;--w:1;--h:1;">
+              <span class="tile-title">один</span>
+            </div>
+
+            <div class="tile desktop-tile" style="--x:3;--y:2;--w:1;--h:1;">
+              <span class="tile-title">робота</span>
+            </div>
+
+            <div class="tile people" style="--x:0;--y:3;--w:3;--h:1;">
+              <span class="tile-text">Ka Lau posted in Tech<br>"Add your own contacts here..."</span>
+            </div>
+
+            <button class="tile projects" data-page="projects" style="--x:3;--y:3;--w:3;--h:1;">
+              <span class="tile-title">проекты</span>
+              <span class="tile-text">нету / нету / нету </span>
+              <b>(xd)</b>
+            </button>
+
+            <button class="tile music-tile" data-page="music" style="--x:6;--y:0;--w:2;--h:2;">
+              <span class="music-symbol">♬</span>
+              <span class="tile-title">мюзика!!</span>
+            </button>
+
+            <div class="tile photos" style="--x:8;--y:0;--w:2;--h:1;">
+              <span class="tile-title">фотографее</span>
+            </div>
+
+            <div class="tile netflix" style="--x:8;--y:1;--w:1;--h:1;">
+              <span>ютаб!!</span>
+            </div>
+
+            <button class="tile contacts-tile" data-page="contacts" style="--x:9;--y:1;--w:1;--h:1;">
+              <span>кантокты</span>
+            </button>
+
+            <div class="tile tunein" style="--x:6;--y:2;--w:2;--h:1;">
+              <span>я хз чо</span>
+            </div>
+
+            <div class="tile video" style="--x:6;--y:3;--w:1;--h:1;">
+              <span class="tile-title">видева!</span>
+            </div>
+
+            <div class="tile xbox" style="--x:7;--y:3;--w:1;--h:1;">
+              <span class="tile-title">хвох</span>
+            </div>
+
+            <div class="tile kindle" style="--x:8;--y:2;--w:2;--h:1;">
+              <span>подписывайтес на мя!!</span>
+            </div>
+
+          </div>
+        </section>
+
+        <section class="ie-app" id="ieApp">
+          <div class="ie-loading" id="ieLoading">
+            <img src="assets/ie-logo-white.png" alt="">
+            <span>открывается internet explorer. </span>
+          </div>
+
+          <div class="ie-window">
+            <div class="ie-titlebar">
+              <div class="title-buttons"><button></button><button></button><button></button></div>
+              <div class="ie-tab"><img src="assets/ie-logo.png" alt=""><span id="tabTitle">vertaw — about</span></div>
+            </div>
+
+            <div class="ie-toolbar">
+              <button>←</button><button>→</button><button>⟳</button>
+              <div class="address-bar"><img src="assets/ie-logo.png" alt=""><span id="addressBar">https://vertaw.win/about</span></div>
+              <button>☆</button><button>⚙</button>
+            </div>
+
+            <main class="bio-browser">
+              <nav class="site-nav">
+                <button data-page="about" class="active">обо мне</button>
+                <button data-page="projects">увлечения</button>
+                <button data-page="skills">навыки</button>
+                <button data-page="music">музыка.</button>
+                <button data-page="contacts">контакты</button>
+                <button id="backToStart">начать</button>
+              </nav>
+
+              <section class="bio-page active" id="page-about">
+                <p class="kicker">vertaw.win/about</p>
+                <h1>vertaw</h1>
+                <p class="lead">здравствуйте. имя мое в интернете vertaw. по жизни социофоб. я от скуки решил сделать это био (половина вайбкодинга, ибо тупой)</p>
+                <div class="info-card">
+                  <h3>мои девайсы.</h3>
+                  <p>iPhone<b>5s</b> с авито за <b>1к вечно дубовых.</b>.</p>
+                </div>
+              </section>
+
+              <section class="bio-page" id="page-projects">
+                <p class="kicker">vertaw.win/projects</p>
+                <h1>увлечения</h1>
+                <div class="project-cards">
+                <p class="lead">играю на иксбокс 360, прохожу сюжетки на компе, разбираю технику какую могу, я хазе :с</p>
+                </div>
+              </section>
+
+              <section class="bio-page" id="page-skills">
+                <p class="kicker">vertaw.local/skills</p>
+                <h1>навыки</h1>
+                <div class="skill-tags"><span>консоли</span><span>пк</span><span>читы</span>
+              </section>
+
+              <section class="bio-page" id="page-music">
+                <p class="kicker">vertaw.local/music</p>
+                <h1>мюзик</h1>
+                <div class="music-card">
+                  <div class="album">♪</div>
+                  <div>
+                    <h3>нау плаинг</h3>
+                    <p>Bloom - Pogo</p>
+                    <button class="inline-music-btn" id="inlineMusicBtn" type="button">нажми чтобы включить, и наоборот!!</button>
+                    <div class="progress"><span></span></div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="bio-page" id="page-contacts">
+                <p class="kicker">vertaw.local/contacts</p>
+                <h1>контакты</h1>
+                <p>tg: <a href="#">@v3rtaw</a></p>
+                <p>github: <a href="#">vertaw</a></p>
+              </section>
+            </main>
+          </div>
+        </section>
+
+      </div>
+      <div class="monitor-neck"></div>
+      <div class="monitor-base"></div>
+    </div>
+  </section>
+
+  <section class="phone-area">
+    <div class="lumia-925">
+      <div class="phone-speaker"></div>
+      <div class="phone-camera"></div>
+
+      <div class="phone-screen">
+        <section class="phone-lock" id="phoneLock">
+          <div><div class="phone-time" id="phoneTime">21:53</div><div class="phone-date" id="phoneDate">четверг, 11 июня</div></div>
+          <span>tap to unlock</span>
+        </section>
+
+        <section class="phone-start">
+          <div class="phone-status"><span>vertaw</span><span>нету 93%</span></div>
+          <div class="phone-tiles">
+            <button class="phone-tile small red"><span>☎</span></button>
+            <button class="phone-tile small orange"><span>▣</span></button>
+            <button class="phone-tile small magenta"><span>♟</span></button>
+
+            <button class="phone-tile large ie active" id="phoneIeTile">
+              <img src="assets/ie-logo-white.png" alt="">
+              <span>Internet Explorer</span>
+              <small>нажми!!</small>
+            </button>
+
+            <button class="phone-tile wide green" data-page="music"><span>♬</span><small>мюзик</small></button>
+            <button class="phone-tile small orange2" data-page="projects"><span>▦</span><small>проекты</small></button>
+            <button class="phone-tile small cyan" data-page="skills"><span>⚙</span><small>навыыки</small></button>
+            <button class="phone-tile wide blue2" data-page="contacts"><span>✉</span><small>маи контакты</small></button>
+          </div>
+        </section>
+      </div>
+
+      <nav class="phone-nav" aria-label="Windows Phone navigation buttons">
+        <button id="phoneBack" class="wp-cap wp-back" aria-label="Back"></button>
+        <button id="phoneHome" class="wp-cap wp-home" aria-label="Start"></button>
+        <button id="phoneSearch" class="wp-cap wp-search" aria-label="Search"></button>
+      </nav>
+    </div>
+  </section>
+
+</div>
+
+<audio id="siteMusic" src="assets/music.mp3" loop></audio>
+<script src="script.js"></script>
+</body>
+</html>
